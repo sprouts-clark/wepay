@@ -1,2 +1,2 @@
 # wepay
-啊wepay module for 
+a wepay module for android app and unity app
