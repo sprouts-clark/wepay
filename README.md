@@ -37,6 +37,10 @@ boolean isPaySupported()
 ## 接入说明
 ### 1、Unity接入说明
 #### 引入aar包，把aar文件放到Plugins/Android目录下即可
+```
+implementation("io.github.sprouts-clark:wepay:1.0.0")
+```
+
 #### c#代码中调用aar包中的事件
 ##### a、拉起支付
 
