@@ -17,7 +17,16 @@ import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.unity3d.player.UnityPlayer;
 
+
+/**
+ * The type Wx pay entry activity.
+ */
 public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
+    /**
+     * Instantiates a new Wx pay entry activity.
+     */
+    public WXPayEntryActivity() {
+    }
 
     private IWXAPI api;//得到api id
     private String orderId;//订单号
