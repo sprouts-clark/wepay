@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+    <application>
+
+        <!-- 微信支付回调入口类声明 -->
+        <activity
+            android:name="com.sprouts.modulewepay.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+
+        </activity>
+
+        <!-- 内容提供者声明（如果有） -->
+
+    </application>
+
+</manifest>
