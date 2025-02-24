@@ -61,7 +61,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    api("com.tencent.mm.opensdk:wechat-sdk-android:+")
+    api(libs.wechat.sdk.android)
     // 从 libs 目录中包含所有的 .jar 文件
     compileOnly(files("libs/classes.jar"))
 }
@@ -166,8 +166,8 @@ tasks.register<Jar>("sourceJar") {
 tasks.register("generateJavadocSha1") {
     val jarFile = File("$buildDir/libs/wepay-1.0.0-javadoc.jar")
     val sourceFile = File("$buildDir/libs/wepay-1.0.0-sources.jar")
-    val aarFile = File("$buildDir/outputs/aar/modulewepay-release.aar")
-    val pomFile = File("$buildDir/publications/maven/pom-default.xml")
+    val aarFile = File("$buildDir/outputs/aar/wepay-1.0.0.aar")
+    val pomFile = File("$buildDir/publications/maven/wepay-1.0.0.pom")
 
     val listFile = arrayOf(jarFile, sourceFile, aarFile, pomFile)
     for (file in listFile) {
